@@ -1,0 +1,165 @@
+<!-- Cars Section -->
+ {% extends 'base.html' %}
+ 
+ {% block content %}
+<section class="py-5 bg-light">
+<div class="container">
+    <div class="row mb-4">
+        <div class="col-lg-12">
+            <h1 class="display-4 fw-bold mb-2">Our Vehicle Collection</h1>
+            <p class="lead text-muted">Browse our premium selection of vehicles available for purchase</p>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="row mb-4">
+    <div class="col-md-3 mb-3">
+        <select class="form-select">
+        <option selected>All Brands</option>
+        <option>Toyota</option>
+        <option>Honda</option>
+        <option>BMW</option>
+        <option>Mercedes</option>
+        </select>
+    </div>
+    <div class="col-md-3 mb-3">
+        <select class="form-select">
+        <option selected>Price Range</option>
+        <option>Under $20,000</option>
+        <option>$20,000 - $40,000</option>
+        <option>$40,000 - $60,000</option>
+        <option>$60,000+</option>
+        </select>
+    </div>
+    <div class="col-md-3 mb-3">
+        <select class="form-select">
+        <option selected>Body Type</option>
+        <option>Sedan</option>
+        <option>SUV</option>
+        <option>Truck</option>
+        <option>Coupe</option>
+        </select>
+    </div>
+    <div class="col-md-3 mb-3">
+        <button class="btn btn-primary w-100">Apply Filters</button>
+    </div>
+    </div>
+
+    <!-- Car Cards Grid -->
+    <div class="row g-4">
+    <!-- Car Card 1 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/400x250/007bff/ffffff?text=Car+Image" class="card-img-top" alt="Car">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">2023 Toyota Camry</h5>
+            <p class="text-muted mb-2">Sedan | 15,000 miles</p>
+            <p class="card-text text-secondary">Premium sedan with excellent fuel efficiency and advanced safety features.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="h4 mb-0 text-primary">$28,500</span>
+            <a href="#" class="btn btn-outline-primary">View Details</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Car Card 2 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/400x250/28a745/ffffff?text=Car+Image" class="card-img-top" alt="Car">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">2024 Honda CR-V</h5>
+            <p class="text-muted mb-2">SUV | 8,000 miles</p>
+            <p class="card-text text-secondary">Spacious SUV perfect for families with modern tech and comfort features.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="h4 mb-0 text-primary">$32,900</span>
+            <a href="#" class="btn btn-outline-primary">View Details</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Car Card 3 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/400x250/dc3545/ffffff?text=Car+Image" class="card-img-top" alt="Car">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">2023 BMW 3 Series</h5>
+            <p class="text-muted mb-2">Sedan | 12,000 miles</p>
+            <p class="card-text text-secondary">Luxury performance sedan with cutting-edge technology and style.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="h4 mb-0 text-primary">$45,800</span>
+            <a href="#" class="btn btn-outline-primary">View Details</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Car Card 4 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/400x250/ffc107/ffffff?text=Car+Image" class="card-img-top" alt="Car">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">2024 Ford F-150</h5>
+            <p class="text-muted mb-2">Truck | 5,000 miles</p>
+            <p class="card-text text-secondary">Powerful pickup truck with exceptional towing capacity and durability.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="h4 mb-0 text-primary">$52,400</span>
+            <a href="#" class="btn btn-outline-primary">View Details</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Car Card 5 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/400x250/6c757d/ffffff?text=Car+Image" class="card-img-top" alt="Car">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">2023 Mercedes C-Class</h5>
+            <p class="text-muted mb-2">Sedan | 10,000 miles</p>
+            <p class="card-text text-secondary">Elegant luxury sedan with premium interior and advanced driver assistance.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="h4 mb-0 text-primary">$48,200</span>
+            <a href="#" class="btn btn-outline-primary">View Details</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Car Card 6 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm">
+        <img src="https://via.placeholder.com/400x250/17a2b8/ffffff?text=Car+Image" class="card-img-top" alt="Car">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">2024 Mazda CX-5</h5>
+            <p class="text-muted mb-2">SUV | 7,500 miles</p>
+            <p class="card-text text-secondary">Stylish compact SUV with responsive handling and upscale features.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="h4 mb-0 text-primary">$29,900</span>
+            <a href="#" class="btn btn-outline-primary">View Details</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Pagination -->
+    <nav aria-label="Car listings pagination" class="mt-5">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+    </nav>
+</div>
+</section>
+{% endblock %}
+
+
+
+      
