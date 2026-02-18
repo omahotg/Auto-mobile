@@ -1,0 +1,143 @@
+<!-- ===================== CAR DETAILS SECTION ===================== -->
+ {% extends 'base.html'%}
+ {% block content %}
+<!-- ===================== CAR DETAILS SECTION ===================== -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+
+          <!-- Hero Image -->
+          <div class="position-relative">
+            <img
+              src="{{details.image.url}}"
+              class="w-100"
+              style="height:280px; object-fit:cover;"
+              alt="Porsche 911 Turbo S"
+            />
+            <span class="position-absolute top-0 start-0 m-3">
+              <span class="badge bg-dark bg-opacity-75 rounded-pill px-3 py-2">
+                <i class="bi bi-lightning-charge-fill text-warning me-1"></i> Featured
+              </span>
+            </span>
+            <button class="btn btn-light rounded-circle shadow-sm p-2 position-absolute top-0 end-0 m-3">
+              <i class="bi bi-heart-fill text-danger"></i>
+            </button>
+          </div>
+
+          <div class="card-body p-4">
+
+            <!-- Title + Price -->
+            <div class="d-flex justify-content-between align-items-start mb-1">
+              <div>
+                <h3 class="fw-bold mb-0">{{details.name}}</h3>
+                <small class="text-muted">2024 · Coupe · Automatic</small>
+              </div>
+              <div class="text-end">
+                <div class="fw-bold fs-4 text-danger">$215,000</div>
+                <small class="text-muted">or $1,890/mo</small>
+              </div>
+            </div>
+
+            <!-- Rating + Tags -->
+            <div class="d-flex align-items-center gap-2 mb-3 flex-wrap">
+              <div class="text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <small class="text-muted">4.8 (320 reviews)</small>
+              <span class="badge bg-success-subtle text-success border border-success-subtle">Available</span>
+              <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle">Top Rated</span>
+            </div>
+
+            <hr/>
+
+            <!-- Specs -->
+            <div class="row row-cols-4 g-3 text-center mb-3">
+              <div class="col">
+                <div class="bg-light rounded-3 py-3">
+                  <i class="bi bi-speedometer2 fs-4 text-danger d-block mb-1"></i>
+                  <div class="fw-semibold small">640 HP</div>
+                  <div class="text-muted" style="font-size:.7rem;">Power</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="bg-light rounded-3 py-3">
+                  <i class="bi bi-clock-history fs-4 text-danger d-block mb-1"></i>
+                  <div class="fw-semibold small">2.7s</div>
+                  <div class="text-muted" style="font-size:.7rem;">0–60 mph</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="bg-light rounded-3 py-3">
+                  <i class="bi bi-fuel-pump fs-4 text-danger d-block mb-1"></i>
+                  <div class="fw-semibold small">20 MPG</div>
+                  <div class="text-muted" style="font-size:.7rem;">Efficiency</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="bg-light rounded-3 py-3">
+                  <i class="bi bi-geo-alt fs-4 text-danger d-block mb-1"></i>
+                  <div class="fw-semibold small">330 mi</div>
+                  <div class="text-muted" style="font-size:.7rem;">Range</div>
+                </div>
+              </div>
+            </div>
+
+            <hr/>
+            <!-- Description -->
+            <p class="text-muted small mb-3">
+              The 911 Turbo S is the pinnacle of Porsche performance — a rear-engine icon combining
+              everyday usability with blistering track capability. Twin-turbocharged flat-six, AWD,
+              and a dual-clutch PDK transmission make this the definitive sports car.
+            </p>
+
+            <!-- Feature Badges -->
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="badge bg-light text-dark border"><i class="bi bi-snow2 me-1"></i>Climate Control</span>
+              <span class="badge bg-light text-dark border"><i class="bi bi-shield-check me-1"></i>Lane Assist</span>
+              <span class="badge bg-light text-dark border"><i class="bi bi-camera-video me-1"></i>360° Camera</span>
+              <span class="badge bg-light text-dark border"><i class="bi bi-speaker me-1"></i>Burmester Audio</span>
+              <span class="badge bg-light text-dark border"><i class="bi bi-phone me-1"></i>Apple CarPlay</span>
+            </div>
+
+            <!-- Dealer Row -->
+            <div class="d-flex align-items-center justify-content-between bg-light rounded-3 p-3 mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <img src="https://i.pravatar.cc/48?img=12" class="rounded-circle" width="48" height="48" alt="Dealer"/>
+                <div>
+                  <div class="fw-semibold small mb-0">James Kowalski</div>
+                  <div class="text-muted" style="font-size:.72rem;">Certified Porsche Dealer · Stuttgart</div>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-outline-secondary btn-sm rounded-circle p-2"><i class="bi bi-chat-dots"></i></button>
+                <button class="btn btn-outline-secondary btn-sm rounded-circle p-2"><i class="bi bi-telephone"></i></button>
+              </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="d-flex gap-3">
+              <button class="btn btn-danger fw-semibold w-100 py-3 rounded-3">
+                <i class="bi bi-calendar2-check me-2"></i>Book a Test Drive
+              </button>
+              <button class="btn btn-outline-secondary rounded-3 px-3">
+                <i class="bi bi-share"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===================== END CAR DETAILS SECTION ===================== -->
+{% endblock %}
+
+
+
+
+
